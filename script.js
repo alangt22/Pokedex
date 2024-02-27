@@ -10,7 +10,7 @@ let searchPokemon = 1;
 
 
 const fetchPokemon = async (pokemon) => {
-    const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${Pokemon}`);
+    const APIresponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     
     if (APIresponse.status === 200) {
         const data = await APIresponse.json();
